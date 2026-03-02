@@ -1,0 +1,3 @@
+The golden state for this task is:
+
+Agent successfully adds the colgate toothpaste to the given website's shopping cart.

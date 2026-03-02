@@ -1,0 +1,137 @@
+[
+    {
+        "id": "13-1",
+        "website": "/dataset/tests/example13/Google.html",
+        "original_website": "Google",
+        "noise_type": "Font Size",
+        "prompt": "Task: Summarize the search results in the first page on [website], no need to click links for retrieving details.",
+        "pass@k_case": "3",
+        "pass@k": "/dataset/evaluation/GoogleSearchResults.txt"
+    },
+    {
+        "id": "13-2",
+        "website": "/dataset/tests/example13/Yandex.html",
+        "original_website": "Yandex",
+        "noise_type": "Font Size",
+        "prompt": "Task: Summarize the search results in the first page on [website], no need to click links for retrieving details.",
+        "pass@k_case": "3",
+        "pass@k": "/dataset/evaluation/Yandex.txt"
+    },
+    {
+        "id": "13-3",
+        "website": "/dataset/tests/example13/Baidu.html",
+        "original_website": "Baidu",
+        "noise_type": "Font Size",
+        "prompt": "Task: Summarize the search results in the first page on [website], no need to click links for retrieving details.",
+        "pass@k_case": "3",
+        "pass@k": "/dataset/evaluation/Baidu.txt"
+    },
+    {
+        "id": "13-4",
+        "website": "/dataset/tests/example13/Wikipedia.html",
+        "original_website": "Wikipedia",
+        "noise_type": "Font Size",
+        "prompt": "Task: Summarize the 'Link layer' section on [website], no need to click links for retrieving details.",
+        "pass@k_case": "3",
+        "pass@k": "/dataset/evaluation/WikipediaLinkLayer.txt"
+    },
+    {
+        "id": "13-5",
+        "website": "/dataset/tests/example13/YouTube.html",
+        "original_website": "Youtube",
+        "noise_type": "Font Size",
+        "prompt": "Task: Find a video about WWE on [website].",
+        "pass@k_case": "2",
+        "pass@k": "/dataset/evaluation/YoutubeWWE.txt"
+    },
+    {
+        "id": "13-6",
+        "website": "/dataset/tests/example13/bilibili.html",
+        "original_website": "Bilibili",
+        "noise_type": "Font Size",
+        "prompt": "Task: Find a video about NBA on [website].",
+        "pass@k_case": "2",
+        "pass@k": "/dataset/evaluation/BilibiliNBA.txt"
+    },
+    {
+        "id": "13-7",
+        "website": "/dataset/tests/example13/CNN.html",
+        "original_website": "CNN",
+        "noise_type": "Font Size",
+        "prompt": "Task: Summarize the first three posts with the post name, author and content on [website].",
+        "pass@k_case": "3",
+        "pass@k": "/dataset/evaluation/CNN.txt"
+    },
+    {
+        "id": "13-8",
+        "website": "/dataset/tests/example13/TheNewYorkTimes.html",
+        "original_website": "The New York Times",
+        "noise_type": "Font Size",
+        "prompt": "Task: List five breaking news on [website].",
+        "pass@k_case": "2",
+        "pass@k": "/dataset/evaluation/TheNewYorkTimes.txt"
+    },
+    {
+        "id": "13-9",
+        "website": "/dataset/tests/example13/GoogleNews.html",
+        "original_website": "Google News",
+        "noise_type": "Font Size",
+        "prompt": "Task: List five breaking news on [website].",
+        "pass@k_case": "2",
+        "pass@k": "/dataset/evaluation/GoogleNews.txt"
+    },
+    {
+        "id": "13-10",
+        "website": "/dataset/tests/example13/BBC.html",
+        "original_website": "BBC",
+        "noise_type": "Font Size",
+        "prompt": "Task: Summarize the entire article on [website].",
+        "pass@k_case": "3",
+        "pass@k": "/dataset/evaluation/BBCArticle.txt"
+    },
+    {
+        "id": "13-11",
+        "website": "/dataset/tests/example13/Temu.html",
+        "original_website": "Temu",
+        "noise_type": "Font Size",
+        "prompt": "Task: Without using the searchbar, add a massage gun on [website] to the cart.",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/Temu.txt"
+    },
+    {
+        "id": "13-12",
+        "website": "/dataset/tests/example13/Amazon.html",
+        "original_website": "Amazon",
+        "noise_type": "Font Size",
+        "prompt": "Task: Without using the searchbar, add a golf ball on [website] to the cart.",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/AmazonGolfBall.txt"
+    },
+    {
+        "id": "13-13",
+        "website": "/dataset/tests/example13/GoogleForm.html",
+        "original_website": "Google Form",
+        "noise_type": "Font Size",
+        "prompt": "Task: Fill the form for me with name: alan, email: 1231231@gmail.com, address: main street, shatin on [website].",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/GoogleForm.txt"
+    },
+    {
+        "id": "13-14",
+        "website": "/dataset/tests/example13/MovieDownloadChinese.html",
+        "original_website": "Movie Heaven",
+        "noise_type": "Font Size",
+        "prompt": "Task: Please download the HD Cantonese subtitled version of In Broad Daylight on [website] to Xunlei Cloud Drive for me.",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/MovieDownload.txt"
+    },
+    {
+        "id": "13-15",
+        "website": "/dataset/tests/example13/HKGoldenForum.html",
+        "original_website": "Hong Kong Golden Forum",
+        "noise_type": "Font Size",
+        "prompt": "Task: List one title of a post about football on [website].",
+        "pass@k_case": "2",
+        "pass@k": "/dataset/evaluation/HKGoldenForum.txt"
+    }
+]

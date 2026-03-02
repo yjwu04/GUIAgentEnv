@@ -1,0 +1,4 @@
+The golden state for this task is:
+
+Agent successfully navigates to the CNN Health homepage (https://www.cnn.com/health) from the current page. 
+This must be achieved through interactions within the given webpage only; the agent cannot perform actions outside the webpage (such as typing a URL directly in the browser) to navigate to the required page. 

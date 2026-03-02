@@ -1,0 +1,21 @@
+# tests folder
+- example1: Image Overlay
+- example2: Invisible Overlay
+- example3: Paywell Overlay
+- example4: Graphic Symbol Overlay
+- example5: reCAPTCHA
+- example6: Autoplay Video
+- example7: Marquee Content
+- example8: Langauge Swap
+- example9: Focus Swap
+- example10: Keyframe Flash
+- example11: Dialect
+- example12: Font Color
+- example13: Font Size
+- example14: Letter Space
+- example15: Line Height
+- example16: Shadow
+- example17: Font Type
+- example18: Horizontal Scroll*
+- example19: Hover
+- example20: Scroll Snapping*

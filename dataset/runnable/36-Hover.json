@@ -1,0 +1,29 @@
+[
+    {
+        "id": "36-1",
+        "website": "https://www.appliancesdirect.co.uk/",
+        "original_website": "Appliances Direct",
+        "noise_type": "Hover",
+        "prompt": "Task: Without using the searchbar, go to the freestanding washing machine page under the laundry tab on [website].",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/AppliancesDirect.txt"
+    },
+    {
+        "id": "36-2",
+        "website": "https://www.dell.com/en-sg",
+        "original_website": "Dell",
+        "noise_type": "Hover",
+        "prompt": "Task: Without using the searchbar, go to the dell promax desktops page under the computers tab on [website].",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/Dell.txt"
+    },
+    {
+        "id": "36-3",
+        "website": "https://www.nike.com/",
+        "original_website": "Nike",
+        "noise_type": "Hover",
+        "prompt": "Task: Without using the searchbar, go to the New Arrivals page under the MAN tab on [website].",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/Nike.txt"
+    }
+]

@@ -1,0 +1,34 @@
+{
+  "input": "Open a new tab and go to wikipedia.org.",
+  "observation_before": {
+    "screenshot_error": null,
+    "screenshot_base64_png": "iVBORw0KGgoAAAANSUhEUgAA...<truncated>..."
+  },
+  "action": [
+    {
+      "id": "toolu_01a2bc3",
+      "name": "computer",
+      "input": {
+        "action": "left_click",
+        "normalized_coordinates": [0.10, 0.05]
+      }
+    }
+  ],
+  "action_result": {
+    "tool_results": [
+      {
+        "type": "tool_result",
+        "tool_use_id": "toolu_01a2bc3",
+        "content": [
+          { "type": "text", "text": "ok" }
+        ]
+      }
+    ],
+    "stop_reason": "tool_use"
+  },
+  "observation_after": {
+    "screenshot_error": null,
+    "screenshot_base64_png": "iVBORw0KGgoAAAANSUhEUgAA...<truncated>..."
+  },
+  "output": "Moving to the address bar and clicking."
+}

@@ -1,0 +1,4 @@
+The golden state for this task is:
+
+Agent successfully clicks on the "迅雷下载" button next to the "电影天堂www.dytt89.com白日之下-2023_HD粤语中字.mp4.torrent" tab (which is the second tab under "白日之下的迅雷下载地址 · · · · · ·"). 
+The only successful action is clicking on the button described above; clicking anywhere else should be marked as a failure.

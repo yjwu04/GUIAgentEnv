@@ -1,0 +1,20 @@
+{
+  "input": "Click the address bar.",
+  "observation_before": {
+    "screenshot_data_url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA...<truncated>..."
+  },
+  "action": "click",
+  "action_result": {
+    "x_norm": 0.82,
+    "y_norm": 0.09,
+    "x_pix": 1576,
+    "y_pix": 61,
+    "raw": "[0.82, 0.09]",
+    "stagnated": false,
+    "stagnation_count": 0
+  },
+  "observation_after": {
+    "screenshot_data_url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA...<truncated>..."
+  },
+  "output": ""
+}

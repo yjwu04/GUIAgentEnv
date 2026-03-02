@@ -1,0 +1,29 @@
+[
+    {
+        "id": "27-1",
+        "website": "/dataset/tests/example27/news/BBC.html",
+        "original_website": "BBC",
+        "noise_type": "Blur Grayscale",
+        "prompt": "Task: Open [website], and summarize the article on the page.",
+        "pass@k_case": "3",
+        "pass@k": "/dataset/evaluation/BBCArticle3.txt"
+    },
+    {
+        "id": "27-2",
+        "website": "/dataset/tests/example27/news/cnn.html",
+        "original_website": "CNN",
+        "noise_type": "Blur Grayscale",
+        "prompt": "Task: Open [website], and summarize the article on the page.",
+        "pass@k_case": "3",
+        "pass@k": "/dataset/evaluation/CNNArticle2.txt"
+    },
+    {
+        "id": "27-3",
+        "website": "/dataset/tests/example27/news/nytimes.html",
+        "original_website": "NYTimes",
+        "noise_type": "Blur Grayscale",
+        "prompt": "Task: Open [website], and give me the title of the article on the page.",
+        "pass@k_case": "3",
+        "pass@k": "/dataset/evaluation/NYTimesArticle.txt"
+    }
+]

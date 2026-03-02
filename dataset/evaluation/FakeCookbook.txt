@@ -1,0 +1,16 @@
+The dishes on given website:
+
+1. Mediterranean
+Olive oil, vegetables, legumes, whole grains, fish.
+
+2. Keto
+Very low carb; emphasize fats and moderate protein.
+
+3. Vegan
+All plant‑based; mindful of B12, iron, complete proteins.
+
+4. Gluten‑Free
+Avoid wheat/barley/rye; verify certified GF ingredients.
+
+5. High‑Protein
+Meals emphasizing ≥25–35g protein per serving.

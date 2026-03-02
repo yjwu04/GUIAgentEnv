@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Diet Recipes Cookbook</title>
+<style>
+  :root{
+    --panel-w: 95vw;   /* each panel nearly a viewport wide */
+    --panel-h: 100vh;
+    --bg: #0b0f14;
+    --fg: #ecf1f7;
+    --muted:#a7b4c8;
+    --line:#26344d;
+    --accent1:#4f8cff; --accent2:#5ce1e6;
+  }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--fg);
+    font-family: system-ui, -apple-system, Inter, Segoe UI, Roboto, sans-serif; }
+
+  /* top nav */
+  .nav{ display:flex; gap:8px; flex-wrap:wrap; }
+  .chip{ border:1px solid var(--line); border-radius:999px; padding:6px 10px; color:var(--muted);
+    text-decoration:none; font-size:13px; }
+  .chip:hover{ color:var(--fg); border-color:#6b83ad; }
+
+  /* horizontal stage */
+  .stage{ height:100%; display:grid; grid-auto-flow:column; grid-auto-columns:var(--panel-w);
+    overflow-x:auto; overflow-y:hidden; scroll-snap-type:x mandatory; scroll-behavior:smooth; }
+  .stage::-webkit-scrollbar{ height:12px; }
+  .stage::-webkit-scrollbar-track{ background:#101827; }
+  .stage::-webkit-scrollbar-thumb{ background:linear-gradient(90deg,var(--accent1),var(--accent2)); border-radius:7px; }
+
+  .panel{ scroll-snap-align:start; height:var(--panel-h);
+    padding:72px clamp(20px,5vw,80px) 48px; box-sizing:border-box; display:grid; align-content:center; gap:16px; }
+  .panel h1{ margin:0 0 8px; font-size: clamp(28px, 6vw, 60px); }
+  .panel h2{ margin:6px 0 6px; font-size: clamp(18px, 3.2vw, 28px); }
+  .muted{ color:var(--muted); }
+
+  .p1{ background: radial-gradient(1100px 520px at 20% 35%, #152033, #0b0f14); }
+  .p2{ background: radial-gradient(1100px 520px at 80% 40%, #162b2f, #0b0f14); }
+  .p3{ background: radial-gradient(1100px 520px at 30% 60%, #2a1f3a, #0b0f14); }
+  .p4{ background: radial-gradient(1100px 520px at 70% 65%, #33251b, #0b0f14); }
+  .p5{ background: radial-gradient(1100px 520px at 50% 30%, #1f2a33, #0b0f14); }
+  .p6{ background: radial-gradient(1100px 520px at 40% 30%, #1f2a2f, #0b0f14); }
+
+  .grid{ display:grid; gap:12px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); max-width:1150px; }
+  .card{ border:1px solid var(--line); border-radius:16px; padding:14px 16px; background:rgba(17,22,31,.5); }
+  .meta{ display:flex; gap:8px; flex-wrap:wrap; font-size:13px; color:var(--muted); }
+  .tag{ border:1px solid var(--line); border-radius:999px; padding:2px 8px; }
+  .list{ margin:8px 0 0 18px; line-height:1.55; }
+  .steps{ margin:8px 0 0 18px; line-height:1.55; }
+  .table{ border-collapse:collapse; font-size:14px; max-width:1000px; }
+  .table th,.table td{ border:1px solid var(--line); padding:8px 10px; }
+  .table th{ background:#111828; text-align:left; }
+  .kbd{ font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:12px;
+    background:#121a27; border:1px solid var(--line); padding:2px 6px; border-radius:6px; }
+
+  .hint{ position:fixed; right:14px; bottom:14px; background:#0f1722; border:1px solid var(--line);
+    padding:8px 10px; border-radius:10px; font-size:12px; color:var(--muted); }
+
+  /* small helper layout inside cards */
+  .two-col{ display:grid; gap:10px; grid-template-columns: minmax(220px, 1fr) minmax(220px, 1fr); }
+</style>
+</head>
+<body>
+
+<div class="stage" id="stage">
+
+  <!-- Panel 1: Overview -->
+  <section id="overview" class="panel p1">
+    <h1>Cookbook: Diet‑Friendly Recipes</h1>
+    <p class="muted">A quick guide to healthy recipes across popular diets. Each card lists time, macros (approx.), ingredients, and steps.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h2>How to Use</h2>
+        <ul class="list">
+          <!-- <li>Scroll horizontally to browse diets.</li> -->
+          <li>Each diet has 2 dishes with ingredients and step‑by‑step instructions.</li>
+          <li>Macros are rough estimates per serving (not medical advice).</li>
+        </ul>
+        <div class="meta" style="margin-top:8px">
+          <span class="tag">Prep ≤ 20m</span><span class="tag">Serves 2–4</span><span class="tag">Home‑cook friendly</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Panel 2: Mediterranean -->
+  <section id="med" class="panel p2">
+    <h1>Mediterranean</h1>
+    <p class="muted">Olive oil, vegetables, legumes, whole grains, fish.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Greek Chickpea Salad</h2>
+        <div class="meta"><span class="tag">Prep 15m</span><span class="tag">Serves 4</span><span class="tag">~350 kcal</span><span class="tag">P20/C35/F14g</span></div>
+        <div class="two-col">
+          <div>
+            <h3>Ingredients</h3>
+            <ul class="list">
+              <li>2 cans chickpeas (rinsed)</li>
+              <li>1 cucumber, 1 bell pepper, 1 cup cherry tomatoes</li>
+              <li>½ red onion, ½ cup Kalamata olives</li>
+              <li>¼ cup feta (optional)</li>
+              <li>Dressing: 3 tbsp olive oil, 1 tbsp red wine vinegar, oregano, salt</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Steps</h3>
+            <ol class="steps">
+              <li>Chop veg; combine with chickpeas & olives.</li>
+              <li>Whisk dressing, toss, top with feta.</li>
+              <li>Chill 10 minutes, serve.</li>
+            </ol>
+            <p class="muted">Swap feta → vegan feta for dairy‑free.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Herb‑Crusted Salmon & Quinoa</h2>
+        <div class="meta"><span class="tag">Total 25m</span><span class="tag">Serves 2</span><span class="tag">~520 kcal</span><span class="tag">P38/C42/F22g</span></div>
+        <div class="two-col">
+          <div>
+            <h3>Ingredients</h3>
+            <ul class="list">
+              <li>2 salmon fillets</li>
+              <li>1 cup cooked quinoa</li>
+              <li>Herb mix (dill, parsley), 2 tsp mustard</li>
+              <li>1 lemon, olive oil, salt, pepper</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Steps</h3>
+            <ol class="steps">
+              <li>Rub salmon with mustard, herbs, salt, pepper.</li>
+              <li>Pan‑sear 3–4m/side; rest.</li>
+              <li>Toss quinoa with lemon & oil; plate with salmon.</li>
+            </ol>
+            <p class="muted">Add steamed greens for fiber.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Panel 3: Keto -->
+  <section id="keto" class="panel p3">
+    <h1>Keto</h1>
+    <p class="muted">Very low carb; emphasize fats and moderate protein.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Garlic‑Butter Chicken Thighs</h2>
+        <div class="meta"><span class="tag">Total 30m</span><span class="tag">Serves 3</span><span class="tag">~560 kcal</span><span class="tag">P35/C5/F42g</span></div>
+        <div class="two-col">
+          <div>
+            <h3>Ingredients</h3>
+            <ul class="list">
+              <li>6 boneless chicken thighs</li>
+              <li>3 tbsp butter, 3 cloves garlic</li>
+              <li>1 tsp paprika, salt, pepper</li>
+              <li>½ lemon, chopped parsley</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Steps</h3>
+            <ol class="steps">
+              <li>Sear thighs skin‑side down 6–7m; flip 5–6m.</li>
+              <li>Add butter & garlic; baste.</li>
+              <li>Finish with lemon & parsley.</li>
+            </ol>
+            <p class="muted">Serve with sautéed zucchini “noodles”.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Cauliflower “Risotto”</h2>
+        <div class="meta"><span class="tag">Total 20m</span><span class="tag">Serves 2</span><span class="tag">~320 kcal</span><span class="tag">P12/C10/F24g</span></div>
+        <div class="two-col">
+          <div>
+            <h3>Ingredients</h3>
+            <ul class="list">
+              <li>3 cups riced cauliflower</li>
+              <li>2 tbsp cream cheese or coconut cream</li>
+              <li>¼ cup grated parmesan (optional)</li>
+              <li>Butter, garlic, pepper</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Steps</h3>
+            <ol class="steps">
+              <li>Sauté garlic in butter; add cauliflower rice.</li>
+              <li>Stir 5–7m; fold in cream cheese & parmesan.</li>
+              <li>Season to taste; serve creamy.</li>
+            </ol>
+            <p class="muted">For dairy‑free, use coconut cream + nutritional yeast.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Panel 4: Vegan -->
+  <section id="vegan" class="panel p4">
+    <h1>Vegan</h1>
+    <p class="muted">All plant‑based; mindful of B12, iron, complete proteins.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Lentil & Sweet Potato Curry</h2>
+        <div class="meta"><span class="tag">Total 35m</span><span class="tag">Serves 4</span><span class="tag">~420 kcal</span><span class="tag">P18/C60/F10g</span></div>
+        <div class="two-col">
+          <div>
+            <h3>Ingredients</h3>
+            <ul class="list">
+              <li>1 cup red lentils (rinsed)</li>
+              <li>1 sweet potato (diced)</li>
+              <li>1 onion, 2 cloves garlic, 1 tbsp curry paste</li>
+              <li>1 can coconut milk, 2 cups veg stock</li>
+              <li>Spinach, lime</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Steps</h3>
+            <ol class="steps">
+              <li>Sauté onion & garlic; stir curry paste.</li>
+              <li>Add lentils, sweet potato, stock; simmer 15–18m.</li>
+              <li>Stir in coconut milk & spinach; season; lime to finish.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Tofu & Broccoli Stir‑Fry</h2>
+        <div class="meta"><span class="tag">Total 20m</span><span class="tag">Serves 2</span><span class="tag">~380 kcal</span><span class="tag">P25/C30/F16g</span></div>
+        <div class="two-col">
+          <div>
+            <h3>Ingredients</h3>
+            <ul class="list">
+              <li>14 oz firm tofu (pressed, cubed)</li>
+              <li>2 cups broccoli florets</li>
+              <li>Sauce: 2 tbsp soy/tamari, 1 tbsp maple, 1 tsp sesame oil, ginger, garlic</li>
+              <li>Cornstarch (for tofu toss)</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Steps</h3>
+            <ol class="steps">
+              <li>Toss tofu with cornstarch; pan‑sear until golden.</li>
+              <li>Stir‑fry broccoli 3–4m; add sauce & tofu; coat.</li>
+              <li>Serve with brown rice or quinoa.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Panel 5: Gluten‑Free -->
+  <section id="gf" class="panel p5">
+    <h1>Gluten‑Free</h1>
+    <p class="muted">Avoid wheat/barley/rye; verify certified GF ingredients.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Chicken & Rice Burrito Bowl</h2>
+        <div class="meta"><span class="tag">Total 30m</span><span class="tag">Serves 3</span><span class="tag">~520 kcal</span><span class="tag">P35/C60/F14g</span></div>
+        <div class="two-col">
+          <div>
+            <h3>Ingredients</h3>
+            <ul class="list">
+              <li>2 cups cooked rice (or cauliflower rice)</li>
+              <li>2 chicken breasts (grilled, sliced)</li>
+              <li>Black beans, corn, pico de gallo</li>
+              <li>Avocado, lime, cilantro</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Steps</h3>
+            <ol class="steps">
+              <li>Layer rice, beans, corn.</li>
+              <li>Top with chicken, pico, avocado.</li>
+              <li>Lime & cilantro to finish.</li>
+            </ol>
+            <p class="muted">Use GF‑certified stock & seasonings.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Garlic Shrimp Polenta</h2>
+        <div class="meta"><span class="tag">Total 25m</span><span class="tag">Serves 2</span><span class="tag">~480 kcal</span><span class="tag">P32/C45/F18g</span></div>
+        <div class="two-col">
+          <div>
+            <h3>Ingredients</h3>
+            <ul class="list">
+              <li>¾ cup quick‑cook polenta</li>
+              <li>10–12 shrimp, peeled</li>
+              <li>2 tbsp butter or olive oil</li>
+              <li>2 cloves garlic, chili flakes, lemon</li>
+              <li>Parmesan (optional), parsley</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Steps</h3>
+            <ol class="steps">
+              <li>Cook polenta per pack; season; optional parmesan.</li>
+              <li>Sauté garlic & shrimp 2–3m until pink.</li>
+              <li>Plate polenta; top with shrimp; lemon, parsley.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Panel 6: High‑Protein -->
+  <section id="hp" class="panel p6">
+    <h1>High‑Protein</h1>
+    <p class="muted">Meals emphasizing ≥25–35g protein per serving.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Turkey Chili (One‑Pot)</h2>
+        <div class="meta"><span class="tag">Total 40m</span><span class="tag">Serves 4</span><span class="tag">~480 kcal</span><span class="tag">P38/C42/F16g</span></div>
+        <div class="two-col">
+          <div>
+            <h3>Ingredients</h3>
+            <ul class="list">
+              <li>1 lb ground turkey</li>
+              <li>1 onion, 1 bell pepper</li>
+              <li>1 can diced tomatoes, 1 can kidney beans</li>
+              <li>2 tbsp chili powder, cumin, salt</li>
+              <li>Stock as needed</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Steps</h3>
+            <ol class="steps">
+              <li>Sauté onion/pepper; brown turkey.</li>
+              <li>Add spices, tomatoes, beans; simmer 20m.</li>
+              <li>Adjust seasoning; serve with yogurt (optional).</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Greek Yogurt Chicken Salad Wraps</h2>
+        <div class="meta"><span class="tag">Total 15m</span><span class="tag">Serves 2</span><span class="tag">~420 kcal</span><span class="tag">P35/C35/F14g</span></div>
+        <div class="two-col">
+          <div>
+            <h3>Ingredients</h3>
+            <ul class="list">
+              <li>2 cups shredded cooked chicken</li>
+              <li>½ cup Greek yogurt, 1 tsp dijon</li>
+              <li>Celery, apple, dill, lemon juice</li>
+              <li>Whole‑grain wraps or lettuce cups</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Steps</h3>
+            <ol class="steps">
+              <li>Mix yogurt, dijon, lemon; fold in chicken & veg.</li>
+              <li>Season; fill wraps or lettuce cups.</li>
+              <li>Serve with greens.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Shopping List (example)</h2>
+        <ul class="list">
+          <li>Protein: salmon, chicken thighs/breasts, tofu, shrimp, turkey</li>
+          <li>Pantry: quinoa, rice, chickpeas, lentils, polenta, tomatoes</li>
+          <li>Produce: broccoli, spinach, onion, garlic, peppers, sweet potato, lemon</li>
+          <li>Dairy/Alts: feta, Greek yogurt, coconut milk, parmesan (opt.)</li>
+          <li>Flavor: olive oil, mustard, curry paste, soy/tamari, herbs, spices</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- <script>
+  // Optional keyboard navigation by panel
+  const stage = document.getElementById('stage');
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'PageDown') {
+      stage.scrollBy({ left: window.innerWidth * 0.95, behavior: 'smooth' });
+    } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+      stage.scrollBy({ left: -window.innerWidth * 0.95, behavior: 'smooth' });
+    }
+  });
+</script> -->
+</body>
+</html>

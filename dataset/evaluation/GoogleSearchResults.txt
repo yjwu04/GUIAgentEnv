@@ -1,0 +1,69 @@
+The search bar: GUI Agent mobile
+
+The search results:
+
+GitHub
+https://github.com › showlab › Awesome-G...
+showlab/Awesome-GUI-Agent
+A curated list of papers, projects, and resources for multi-modal Graphical User Interface (GUI) agents. Build a digital assistant on your screen.
+
+Related Questions:
+What is a mobile GUI?
+What is a GUI agent?
+What is a GUI-based user agent?
+What is an example of a GUI based user agent in mail?
+
+arXiv
+https://arxiv.org › cs
+Advancing Mobile GUI Agents: A Verifier-Driven Approach ...
+作者：G Dai · 2025 · 被引用次数：3 — Abstract:We propose V-Droid, a mobile GUI task automation agent. Unlike previous mobile agents that utilize Large Language Models (LLMs) as ...
+
+arXiv
+https://arxiv.org › cs
+LLM-Powered GUI Agents in Phone Automation
+作者：G Liu · 2025 · 被引用次数：12 — Abstract:With the rapid rise of large language models (LLMs), phone automation has undergone transformative changes. This paper systematically ...
+
+GitHub
+https://appagentx.github.io
+AppAgentX: Evolving GUI Agents as Proficient Smartphone ...
+We propose an evolving GUI agent framework that enhances efficiency and intelligence by abstracting high-level actions from execution history.
+
+GitHub
+https://github.com › OpenBMB › AgentCPM...
+OpenBMB/AgentCPM-GUI
+2025年5月13日 — AgentCPM-GUI: An on-device GUI agent for operating Android apps, enhancing reasoning ability with reinforcement fine-tuning for efficient task ...
+
+Papers With Code
+https://paperswithcode.com › paper › mobil...
+MobileFlow: A Multimodal LLM For Mobile GUI Agent
+2024年7月5日 — This paper introduces MobileFlow, a multimodal large language model meticulously crafted for mobile GUI agents.
+
+Hugging Face
+https://huggingface.co › papers
+Few-Shot Mobile GUI Agent with a Unified Demonstration ...
+2025年4月22日 — We propose enhancing mobile GUI agent capabilities through human demonstrations, focusing on improving performance in unseen scenarios.
+
+Preprints.org
+https://www.preprints.org › manuscript
+LLM-Powered GUI Agents in Phone Automation
+2025年1月5日 — This paper systematically reviews LLM-driven phone GUI agents, highlighting their evolution from script-based automation to intelligent, adaptive systems.
+
+OpenReview
+https://openreview.net › forum
+UI-Hawk: Unleashing the Screen Stream Understanding for ...
+2024年12月16日 — We propose UI-Hawk, a multi-modal GUI agent specially designed to process screen streams encountered during GUI navigation.
+
+ResearchGate
+https://www.researchgate.net › publication
+(PDF) Advancing Mobile GUI Agents: A Verifier-Driven ...
+2025年3月20日 — These agents aim to execute human instructions on smartphones by interpreting textual instructions and performing actions via the device's ...
+
+Other users also searched:
+GUI agent
+gui agent综述
+gui agent是什么
+gui agents with foundation models: a comprehensive survey
+Mobile-Agent
+Mobile-Agent-v2
+CogAgent
+Multimodal agent

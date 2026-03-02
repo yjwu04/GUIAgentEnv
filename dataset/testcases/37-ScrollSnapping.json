@@ -1,0 +1,9 @@
+[
+    {
+        "id": "37-1",
+        "website": "https://thebearandhisscarf.com/",
+        "original_website": "The Bear and His Scarf",
+        "noise_type": "Scroll Snapping",
+        "prompt": "Task: Summarize the [website], no need to click links for retrieving details."
+    }
+]

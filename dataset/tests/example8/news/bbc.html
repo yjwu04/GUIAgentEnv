@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BBC Language Switch Demo</title>
+  <style>
+    /* Make the iframe fill the viewport */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    #contentFrame {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      // After 1 second, do a full iframe navigation to Arabic
+      setTimeout(() => {
+        document.getElementById('contentFrame').src = './bbc-Arabic.html';
+      }, 1000);
+    });
+  </script>
+</head>
+<body>
+  <!-- Initially load the English page -->
+  <iframe
+    id="contentFrame"
+    src="./bbc-EN.html"
+    title="BBC English"
+  ></iframe>
+</body>
+</html>

@@ -1,0 +1,3 @@
+The golden state for this task is:
+
+Agent successfully outputs the correct calorie count of 140 (or 140 calories/kcal) for Original Cheerios cereal from the given website. The numeric value 140 must be present.

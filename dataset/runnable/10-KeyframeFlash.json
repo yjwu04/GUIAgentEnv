@@ -1,0 +1,20 @@
+[
+    {
+        "id": "10-1",
+        "website": "/dataset/tests/example10/shopping/Amazon_whitedress.html",
+        "original_website": "Amazon-white-dress",
+        "noise_type": "Keyframe Flash",
+        "prompt": "Task: Open [website]. Select a white dress and give me the name of the dress you selected.",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/WhiteDress2.txt"
+    },
+    {
+        "id": "10-2",
+        "website": "/dataset/tests/example10/shopping/Amazon_whitedress2.html",
+        "original_website": "Amazon-white-dress",
+        "noise_type": "Keyframe Flash",
+        "prompt": "Task: Open [website]. Select a white dress greater than 35$ and give me the name of the dress you selected.",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/WhiteDress3.txt"
+    }
+]

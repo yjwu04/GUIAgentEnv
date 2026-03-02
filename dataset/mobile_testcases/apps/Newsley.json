@@ -1,0 +1,58 @@
+[
+    {
+        "id": "mobile-1",
+        "noise": "Call",
+        "app": "newsley",
+        "package_name": "com.azizadx.newsly",
+        "apk_path": "dataset/mobile_tests/newsly/app-callNoise-debug.apk",
+        "prompt": "List two Entertainment news article titles."
+    },
+    {
+        "id": "mobile-2",
+        "noise": "FontScale",
+        "app": "newsley",
+        "package_name": "com.azizadx.newsly",
+        "apk_path": "dataset/mobile_tests/newsly/app-fontNoise-debug.apk",
+        "prompt": "List two Entertainment news article titles."
+    },
+    {
+        "id": "mobile-3",
+        "noise": "HeadsUp",
+        "app": "newsley",
+        "package_name": "com.azizadx.newsly",
+        "apk_path": "dataset/mobile_tests/newsly/app-headsupNoise-debug.apk",
+        "prompt": "List two Entertainment news article titles."
+    },
+    {
+        "id": "mobile-4",
+        "noise": "Keyboard",
+        "app": "newsley",
+        "package_name": "com.azizadx.newsly",
+        "apk_path": "dataset/mobile_tests/newsly/app-keyboardNoise-debug.apk",
+        "prompt": "List two Entertainment news article titles."
+    },
+    {
+        "id": "mobile-5",
+        "noise": "OrientationFlip",
+        "app": "newsley",
+        "package_name": "com.azizadx.newsly",
+        "apk_path": "dataset/mobile_tests/newsly/app-orientationNoise-debug.apk",
+        "prompt": "List two Entertainment news article titles."
+    },
+    {
+        "id": "mobile-6",
+        "noise": "Overlay",
+        "app": "newsley",
+        "package_name": "com.azizadx.newsly",
+        "apk_path": "dataset/mobile_tests/newsly/app-overlayNoise-debug.apk",
+        "prompt": "List two Entertainment news article titles."
+    },
+    {
+        "id": "mobile-7",
+        "noise": "Promo",
+        "app": "newsley",
+        "package_name": "com.azizadx.newsly",
+        "apk_path": "dataset/mobile_tests/newsly/app-promoNoise-debug.apk",
+        "prompt": "Find a breaking news article and give me the title."
+    }
+]

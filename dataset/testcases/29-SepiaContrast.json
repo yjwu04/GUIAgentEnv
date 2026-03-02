@@ -1,0 +1,29 @@
+[
+    {
+        "id": "29-1",
+        "website": "/dataset/tests/example29/news/BBC.html",
+        "original_website": "BBC",
+        "noise_type": "Sepia Contrast",
+        "prompt": "Task: Open [website], and help me go back to the homepage.",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/BBCGotoHome.txt"
+    },
+    {
+        "id": "29-2",
+        "website": "/dataset/tests/example29/news/cnn.html",
+        "original_website": "CNN",
+        "noise_type": "Sepia Contrast",
+        "prompt": "Task: Open [website], and help me go to its health page.",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/CNNGotoHealth.txt"
+    },
+    {
+        "id": "29-3",
+        "website": "/dataset/tests/example29/news/nytimes.html",
+        "original_website": "NYTimes",
+        "noise_type": "Sepia Contrast",
+        "prompt": "Task: Open [website], and help me go to its harvard's international student page.",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/NYTimesGotoHarvard.txt"
+    }
+]

@@ -1,0 +1,4 @@
+The golden state for this task is:
+
+Agent successfully returns a valid full hotel name in San Francisco along with its exact location. 
+The agent must find the hotel information directly from the Trip.com website content, not from the embedded map iframe. 

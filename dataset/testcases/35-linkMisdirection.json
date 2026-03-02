@@ -1,0 +1,11 @@
+[
+    {
+        "id": "35-1",
+        "website": "/dataset/tests/example35/videoweb/youtube.html",
+        "original_website": "Youtube",
+        "noise_type": "Link Misdirection",
+        "prompt": "Task: Open [website], I'd like to watch the related video called 'ANGRY GRANDMA FINDS BIGFOOT (REAL EVIDENCE)'. please help me.",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/AngryGrandma.txt"
+    }
+]

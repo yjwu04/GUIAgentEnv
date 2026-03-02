@@ -1,0 +1,4 @@
+The golden state for this task is:
+
+The agent successfully opens the dell promax desktops page (https://www.dell.com/en-us/shop/desktop-computers/scr/desktops/appref=precision-product-line).
+The agent must not use the searchbar and navigate to the page by clicking the computers tab, the Desktops & All-in-Ones tab, the Desktops & All-in-Ones by brand tab, and finally Dell Pro Max Desktops tab on the given website.

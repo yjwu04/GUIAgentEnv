@@ -1,0 +1,51 @@
+[
+    {
+        "id": "mobile-2",
+        "noise": "FontScale",
+        "app": "newsley",
+        "package_name": "com.azizadx.newsly",
+        "apk_path": "dataset/mobile_tests/newsly/app-fontNoise-debug.apk",
+        "prompt": "List two Entertainment news article titles."
+    },
+    {
+        "id": "mobile-9",
+        "noise": "FontScale",
+        "app": "Find-Nearby-master",
+        "package_name": "com.nearby.vajidkagdi.nearby",
+        "apk_path": "dataset/mobile_tests/Find-Nearby-master/app-fontNoise-debug.apk",
+        "prompt": "List three nearby mcdonalds location and rating."
+    },
+    {
+        "id": "mobile-16",
+        "noise": "FontScale",
+        "app": "BreezyWeather",
+        "package_name": "org.breezyweather",
+        "apk_path": "dataset/mobile_tests/BreezyWeather/app-basic-fontNoise-universal-debug.apk",
+        "prompt": "List the wind conditions for the next three days."
+    },
+    {
+        "id": "mobile-23",
+        "noise": "FontScale",
+        "app": "Transportr-master",
+        "package_name": "de.grobox.transportr",
+        "apk_path": "dataset/mobile_tests/Transportr-master/app-fontNoise-debug.apk",
+        "prompt": "Tell me how to navigate from my current location to Shoreline Park. Provide one feasible plan."
+    },
+    {
+        "id": "mobile-30",
+        "noise": "FontScale",
+        "app": "NewPipe",
+        "package_name": "org.schabi.newpipe",
+        "apk_path": "dataset/mobile_tests/NewPipe/app-fontNoise-debug.apk",
+        "prompt": "Help me find one apple pie recipe. Give me the video name and basic information shown on the page."
+    },
+    {
+        "id": "mobile-37",
+        "noise": "FontScale",
+        "app": "shoppingapp",
+        "package_name": "com.vishalgaur.shoppingapp",
+        "apk_path": "dataset/mobile_tests/shoppingapp/app-fontNoise-debug.apk",
+        "prompt": "Find the cheapest purple sneaker in size 7 and add it to the cart.",
+        "pass@k": "/dataset/evaluation/Mobile-shoppingapp.txt"
+    }
+]

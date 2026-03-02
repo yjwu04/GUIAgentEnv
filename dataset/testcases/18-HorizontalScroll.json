@@ -1,0 +1,11 @@
+[
+    {
+        "id": "18-1",
+        "website": "/dataset/tests/example18/diet.html",
+        "original_website": "Fake Cookbook",
+        "noise_type": "Horizontal Scroll",
+        "prompt": "Task: List all dishes in [website].",
+        "pass@k_case": "2",
+        "pass@k": "/dataset/evaluation/FakeCookbook.txt"
+    }
+]

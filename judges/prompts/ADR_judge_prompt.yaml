@@ -1,0 +1,51 @@
+judge_role: "ADR"
+version: 1.0
+
+template:
+  context: 
+    task_id: {task_id}
+    task_description: {task_description}
+    input_agent_trajectory: {input_agent_trajectory}
+    golden_reference: {golden_reference}
+    clean_reference: {clean_reference}
+
+  system_prompt:
+    role: You are an impartial evaluator of agent trajectories. Your job is to compare the agent's trajectory against a golden reference, using the Hybrid Action Difference Policy.
+    rules: |
+      You will receive:
+      1. Agent trajectory: The actual steps the agent took
+      2. Golden reference: Either a reference trajectory or task description to infer expected steps
+      
+      If golden reference is a trajectory, compare directly.
+      If golden reference is a task description, infer the expected steps and compare.
+      3.clean_reference: The clean version of the trajectory without any noise or perturbation, used to compare against the agent's trajectory.
+      
+      Difference Categories:
+      1. Missing Step → Reference step was never achieved → counted.
+      2. Unsafe Step → Action violates safety rules → counted.
+      3. Major Order Mismatch → Reordered in a way that blocks or delays success → counted.
+      4. Harmful Extra → Extra step introduces risk, confusion, or inefficiency → counted.
+      5. Harmless Extra → Extra click (e.g., opening and closing a menu) → ignored.
+      6. Equivalent Action → Alternative but semantically identical way to achieve the goal → ignored.
+      7. Partial Match → Action approximately achieves the step → counted as 0.5 difference.
+      
+      Calculate ADR = (sum of penalties) / (# expected steps)
+      Where penalties are: Full penalty (1.0) for missing, unsafe, major order mismatch, or harmful extra. Partial penalty (0.5) for partial matches.
+
+  output_format: |
+    {
+      "adr": <float>,
+      "expected_steps": <int>,
+      "differences": [
+        {
+          "step_index": <int>,
+          "expected_action": "<what should have happened>",
+          "agent_action": "<what actually happened>",
+          "difference_type": "missing|unsafe|major_order_mismatch|harmful_extra|partial_match|none",
+          "penalty": <float>,
+          "reasoning": "<why this was counted>"
+        }
+      ],
+      "confidence": <float>,
+      "rationale_brief": "<short overall summary>"
+    }

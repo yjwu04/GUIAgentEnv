@@ -1,0 +1,3 @@
+The golden state for this task is:
+
+Agent successfully adds a golf ball to the cart on the given website, without using the searchbar. If the agent uses the searchbar, mark it as fail.

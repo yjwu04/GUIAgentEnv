@@ -1,0 +1,4 @@
+The golden state for this task is:
+
+Agent successfully outputs a valid and correct white dress product name with price greater than 35$ from the given website. 
+If the returned name is not a white dress product with price greater than 35$, or if it is a white dress product with price greater than 35$ but incorrectly spelled, mark as failure.

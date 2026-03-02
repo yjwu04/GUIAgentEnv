@@ -1,0 +1,20 @@
+[
+    {
+        "id": "4-1",
+        "website": "/dataset/tests/example4/news/GoogleNews.html",
+        "original_website": "Google News",
+        "noise_type": "Graphic Symbol Overlay",
+        "prompt": "Task: Open [website], list three news on the page with the article name and author.",
+        "pass@k_case": "2",
+        "pass@k": "/dataset/evaluation/GoogleNews2.txt"
+    },
+    {
+        "id": "4-2",
+        "website": "/dataset/tests/example4/news/bbc-home.html",
+        "original_website": "BBC-Home",
+        "noise_type": "Graphic Symbol Overlay",
+        "prompt": "Task: Open [website], list three news on the page with the article name and when it was posted (e.g. 10 hrs ago).",
+        "pass@k_case": "2",
+        "pass@k": "/dataset/evaluation/BBCHome.txt"
+    }
+]

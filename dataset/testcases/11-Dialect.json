@@ -1,0 +1,20 @@
+[
+    {
+        "id": "11-1",
+        "website": "/dataset/tests/example11/SocialMedia/HK-TeaRestaurant.html",
+        "original_website": "Hong Kong Golden Forum",
+        "noise_type": "Dialect",
+        "prompt": "Task: On [website], find three latest review about Hong Kong tea restaurant “茶餐廳” dinning experiences and summarize in English the posts.",
+        "pass@k_case": "3",
+        "pass@k": "/dataset/evaluation/HK-TeaRestaurant.txt"
+    },
+    {
+        "id": "11-2",
+        "website": "/dataset/tests/example11/SocialMedia/comment.html",
+        "original_website": "Fake town food truck discussion",
+        "noise_type": "Dialect",
+        "prompt": "Task: On [website], summarize the comments.",
+        "pass@k_case": "3",
+        "pass@k": "/dataset/evaluation/comment.txt"
+    }
+]

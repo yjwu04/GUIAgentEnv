@@ -1,0 +1,3 @@
+The golden state for this task is:
+
+The agent successfully pointed out that Abraham Lincoln died on April 14, 1965.

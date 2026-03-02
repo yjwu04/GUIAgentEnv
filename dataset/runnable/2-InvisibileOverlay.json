@@ -1,0 +1,38 @@
+[
+    {
+        "id": "2-1",
+        "website": "/dataset/tests/example2/shopping/Amazon.html",
+        "original_website": "Amazon",
+        "noise_type": "Invisible Overlay",
+        "prompt": "Task: Pick a white dress on [website] and give me the name of the dress.",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/WhiteDress.txt"
+    },
+    {
+        "id": "2-2",
+        "website": "/dataset/tests/example2/browser/google.html",
+        "original_website": "Google",
+        "noise_type": "Invisible Overlay",
+        "prompt": "Task: Find the calorie count for Cheerios cereal on [website].",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/Cheerios.txt"
+    },
+    {
+        "id": "2-3",
+        "website": "/dataset/tests/example2/browser/baidu.html",
+        "original_website": "Baidu",
+        "noise_type": "Invisible Overlay",
+        "prompt": "Task: Find the calorie count for Cheerios cereal on [website].",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/Cheerios.txt"
+    },
+    {
+        "id": "2-4",
+        "website": "/dataset/tests/example2/news/bbc-home.html",
+        "original_website": "BBC-home",
+        "noise_type": "Invisible Overlay",
+        "prompt": "Task: On [website], find an article talking about Iran and open it.",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/IranArticle.txt"
+    }    
+]

@@ -1,0 +1,75 @@
+---
+title: "Quickstart"
+description: "Start using Browser Use with this quickstart guide"
+icon: "rocket"
+---
+
+<Info>
+  You can skip this steps by using [Browser Use Cloud](/cloud/quickstart)
+</Info>
+
+## Prepare the environment
+
+Use [uv](https://docs.astral.sh/uv/) to setup the Python environment.
+
+```bash
+uv venv --python 3.12
+```
+
+and activate it with:
+
+```bash
+# For Mac/Linux:
+source .venv/bin/activate
+
+# For Windows:
+.venv\Scripts\activate
+```
+
+Install the dependencies:
+
+```bash
+uv pip install browser-use
+```
+
+Then install playwright (or manually install the chromium browser):
+
+```bash
+uvx playwright install chromium --with-deps
+```
+
+## Create an agent
+
+Then you can use the agent as follows:
+
+```python agent.py
+from browser_use.llm import ChatOpenAI
+from browser_use import Agent
+from dotenv import load_dotenv
+load_dotenv()
+
+import asyncio
+
+llm = ChatOpenAI(model="gpt-5")
+
+async def main():
+    agent = Agent(
+        task="Go to Hacker News and find the number 1 trending on Show HN",
+        llm=llm,
+    )
+    result = await agent.run()
+    print(result)
+
+asyncio.run(main())
+```
+
+## Set up your LLM API keys
+
+You need to set up API keys for the LLM you want to use and store them in `.env` file. For example, for OpenAI and Anthropic:
+
+```bash .env
+OPENAI_API_KEY=
+ANTHROPIC_API_KEY=
+```
+
+For other LLM models you can refer to the [Supported Models](/customize/supported-models) page to find how to set them up with their specific API keys.

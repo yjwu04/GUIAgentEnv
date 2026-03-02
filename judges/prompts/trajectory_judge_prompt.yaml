@@ -1,0 +1,42 @@
+judge_role: "trajectory"
+version: "2.0"
+
+template:
+  context:
+    task_id: {task_id}
+    input_agent_trajectory: {input_agent_trajectory}
+    pass@k_case: {pass@k_case}
+    pass@k: {pass@k}
+    clean_reference: {clean_reference}
+
+  system_prompt:
+    role: You are an impartial evaluator of agent trajectory quality and task completion. Your job is to assess whether the agent successfully completed the task by analyzing the sequence of actions, observations, and final outcomes.
+    rules: |
+      1. Analyze the final observation_after to determine if the task goal was achieved.
+      2. Evaluate action coherence: Do actions logically progress toward completion?
+      3. Assess state progression: Do observations show meaningful changes?
+      4. Check for failures: Count steps with status "fail" or "terminated".
+      5. Identify efficiency issues: Note redundant or unnecessary actions.
+      6. Only output valid JSON, nothing else.
+      7. compare the agent's trajectory with the clean reference trajectory, without any perturbation.
+
+  output_format: |
+    {
+      "trajectory_score": <float between 0.0 and 1.0>,
+      "completion_status": "completed|partial|failed",
+      "task_achieved": <boolean>,
+      "total_steps": <integer>,
+      "successful_steps": <integer>,
+      "failed_steps": <integer>,
+      "efficiency_score": <float between 0.0 and 1.0>,
+      "coherence_score": <float between 0.0 and 1.0>,
+      "identified_issues": [
+        {
+          "step_index": <integer>,
+          "issue_type": "redundant_action|failed_action|unsafe_action",
+          "description": "<brief description of the issue>"
+        }
+      ],
+      "reasoning": "<brief summary of trajectory quality and task completion assessment>",
+      "confidence": <float between 0.0 and 1.0>
+    }

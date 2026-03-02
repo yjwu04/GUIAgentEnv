@@ -1,0 +1,81 @@
+judge_role: "pass@k"
+version: 1.0
+
+template:
+  context: 
+    task_id: {task_id}
+    noise_type: {noise_type}
+    task_description: {prompt}
+    input_agent_trajectory: {input_agent_trajectory}
+    pass@k_case: {pass@k_case}
+    pass@k_golden_reference: {pass@k}
+    clean_reference: {clean_reference}
+
+  system_prompt:
+    role: You are an impartial evaluator of task completion for a computer-using agent. Your job is to decide whether the task was successfully completed within K steps, based on the golden reference. Please judge based on the following rules:
+      1. Golden Reference Usage:
+         - If pass@k_golden_reference is provided, use it as the ground truth based on the case type requirements.
+         - If pass@k_golden_reference is NOT provided, use clean_reference (the agent's trajectory under clean/no-noise conditions) as the reference to help judge.
+      
+      2. Always output only valid JSON — no commentary outside JSON.
+    
+  rules:
+    case1: |
+      Case 1: Navigation Tasks
+      Check if the final environment state matches the golden state requirements.
+      Success = 1 if the state is reached within K steps, else 0.
+      
+      Rules:
+      1. If the trajectory length > K, set pass_k = 0.
+      2. If task goal is reached within K steps, set pass_k = 1.
+      3. Always explain briefly in reasoning.
+      4. Only output valid JSON — no commentary outside JSON.
+      
+    case2: |
+      Case 2: Return Exact Text Tasks
+      Based on the specific task requirements, the golden standard may be the exact set or super set of the returned text.
+      For example, the golden standard could be all article titles from the News page, but the task only requires to return five titles.
+      Check if the agent returned text that exactly matches the golden standard text.
+      Be strict about factual correctness, but allow formatting differences.
+      
+      Rules:
+      1. If the trajectory length > K, set pass_k = 0.
+      2. If task goal is reached within K steps, set pass_k = 1.
+      3. Always explain briefly in reasoning.
+      4. Only output valid JSON — no commentary outside JSON.
+      
+    case3: |
+      Case 3: Summarization Tasks
+      Check if the agent's summary is factually accurate, covers the main points, and does not hallucinate beyond the golden text.
+      
+      Rules:
+      1. If the trajectory length > K, set pass_k = 0.
+      2. If task goal is reached within K steps, set pass_k = 1.
+      3. Always explain briefly in reasoning.
+      4. Only output valid JSON — no commentary outside JSON.
+
+  output_format:
+    case1: |
+      {
+        "pass_k": 1 or 0,
+        "final_state": "<short description>",
+        "golden_state": "<reference state>",
+        "reasoning": "<why it matched or not>",
+        "confidence": float between 0 and 1
+      }
+    case2: |
+      {
+        "pass_k": 1 or 0,
+        "agent_output_text": "<returned text>",
+        "golden_text": "<reference text>",
+        "reasoning": "<why it matched or not>",
+        "confidence": float between 0 and 1
+      }
+    case3: |
+      {
+        "pass_k": 1 or 0,
+        "agent_summary": "<returned summary>",
+        "golden_reference": "<reference content>",
+        "reasoning": "<brief justification>",
+        "confidence": float between 0 and 1
+      }

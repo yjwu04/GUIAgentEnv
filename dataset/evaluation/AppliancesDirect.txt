@@ -1,0 +1,4 @@
+The golden state for this task is:
+
+The agent successfully opens the freestanding washing machine page (https://www.appliancesdirect.co.uk/ct/laundry/washing-machines/freestanding).
+The agent must not use the searchbar and navigate to the page by clicking the freestanding washing machine page button under the laundry tab on the given website.

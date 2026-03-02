@@ -1,0 +1,3 @@
+The golden state for this task is:
+
+Agent successfully opens an article talking about Iran from the given website. The article should be specifically about Iran, Iranian politics, Iranian news, or Iran-related events. The word "Iran" should appear prominently in the article title or content.

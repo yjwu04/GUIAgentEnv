@@ -1,0 +1,5 @@
+The golden state for this task is:
+
+Agent successfully outputs a valid and correct white dress product name from the given website. 
+If the returned name is not a white dress product, or if it is a white dress product but incorrectly spelled, mark as failure.
+If returned "MARSVOVO - Summer Dress Sleeveless Fashion Plus Size Spaghetti Strap Sundress with Pockets Plus Size Maxi Dress" mark as failure.

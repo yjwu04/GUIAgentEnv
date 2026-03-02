@@ -1,0 +1,58 @@
+[
+    {
+        "id": "mobile-15",
+        "noise": "Call",
+        "app": "BreezyWeather",
+        "package_name": "org.breezyweather",
+        "apk_path": "dataset/mobile_tests/BreezyWeather/app-basic-callNoise-universal-debug.apk",
+        "prompt": "List the wind conditions for the next three days."
+    },
+    {
+        "id": "mobile-16",
+        "noise": "FontScale",
+        "app": "BreezyWeather",
+        "package_name": "org.breezyweather",
+        "apk_path": "dataset/mobile_tests/BreezyWeather/app-basic-fontNoise-universal-debug.apk",
+        "prompt": "List the wind conditions for the next three days."
+    },
+    {
+        "id": "mobile-17",
+        "noise": "HeadsUp",
+        "app": "BreezyWeather",
+        "package_name": "org.breezyweather",
+        "apk_path": "dataset/mobile_tests/BreezyWeather/app-basic-headsupNoise-universal-debug.apk",
+        "prompt": "List the wind conditions for the next three days."
+    },
+    {
+        "id": "mobile-18",
+        "noise": "Keyboard",
+        "app": "BreezyWeather",
+        "package_name": "org.breezyweather",
+        "apk_path": "dataset/mobile_tests/BreezyWeather/app-basic-keyboardNoise-universal-debug.apk",
+        "prompt": "List the wind conditions for the next three days."
+    },
+    {
+        "id": "mobile-19",
+        "noise": "OrientationFlip",
+        "app": "BreezyWeather",
+        "package_name": "org.breezyweather",
+        "apk_path": "dataset/mobile_tests/BreezyWeather/app-basic-orientationNoise-universal-debug.apk",
+        "prompt": "List the wind conditions for the next three days."
+    },
+    {
+        "id": "mobile-20",
+        "noise": "Overlay",
+        "app": "BreezyWeather",
+        "package_name": "org.breezyweather",
+        "apk_path": "dataset/mobile_tests/BreezyWeather/app-basic-overlayNoise-universal-debug.apk",
+        "prompt": "List the wind conditions for the next three days."
+    },
+    {
+        "id": "mobile-21",
+        "noise": "Promo",
+        "app": "BreezyWeather",
+        "package_name": "org.breezyweather",
+        "apk_path": "dataset/mobile_tests/BreezyWeather/app-basic-promoNoise-universal-debug.apk",
+        "prompt": "List the wind conditions for the next three days."
+    }
+]

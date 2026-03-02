@@ -1,0 +1,1 @@
+Task: Find the calorie count for Cheerios cereal on http://localhost:8000/tests/example1/browser/google.html. Record: 1. how long did you take to finish the task 2. how many steps you took. Important: you are only allowed to interact inside the given website.

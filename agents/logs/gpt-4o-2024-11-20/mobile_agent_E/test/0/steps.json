@@ -1,0 +1,86 @@
+[
+    {
+        "step": 0,
+        "operation": "init",
+        "instruction": "Open 'Transportr'. I want to navigate from 'R\u00e5dhuspladsen 1, 1550 K\u00f8benhavn V' to 'N\u00f8rreport Station, 1360 K\u00f8benhavn K' via 'K\u00f8benhavns Hovedbibliotek, Krystalgade 15, 1172 K\u00f8benhavn K'.",
+        "task_id": 0,
+        "run_name": "test",
+        "max_itr": 10,
+        "max_consecutive_failures": 3,
+        "max_repetitive_actions": 3,
+        "future_tasks": [],
+        "log_root": "logs/gpt-4o-2024-11-20/mobile_agent_E",
+        "tips_path": null,
+        "shortcuts_path": null,
+        "persistent_tips_path": null,
+        "persistent_shortcuts_path": null,
+        "perception_args": {
+            "device": "cuda",
+            "caption_call_method": "api",
+            "caption_model": "qwen-vl-plus",
+            "groundingdino_model": "AI-ModelScope/GroundingDINO",
+            "groundingdino_revision": "v1.0.0",
+            "ocr_detection_model": "iic/cv_resnet18_ocr-detection-db-line-level_damo",
+            "ocr_recognition_model": "iic/cv_convnextTiny_ocr-recognition-document_damo"
+        },
+        "init_info_pool": {
+            "instruction": "Open 'Transportr'. I want to navigate from 'R\u00e5dhuspladsen 1, 1550 K\u00f8benhavn V' to 'N\u00f8rreport Station, 1360 K\u00f8benhavn K' via 'K\u00f8benhavns Hovedbibliotek, Krystalgade 15, 1172 K\u00f8benhavn K'.",
+            "tips": "0. Do not add any payment information. If you are asked to sign in, ignore it or sign in as a guest if possible. Close any pop-up windows when opening an app.\n1. By default, no APPs are opened in the background.\n2. Screenshots may show partial text in text boxes from your previous input; this does not count as an error.\n3. When creating new Notes, you do not need to enter a title unless the user specifically requests it.\n",
+            "shortcuts": {
+                "Tap_Type_and_Enter": {
+                    "name": "Tap_Type_and_Enter",
+                    "arguments": [
+                        "x",
+                        "y",
+                        "text"
+                    ],
+                    "description": "Tap an input box at position (x, y), Type the \"text\", and then perform the Enter operation. Very useful for searching and sending messages!",
+                    "precondition": "There is a text input box on the screen with no previously entered content.",
+                    "atomic_action_sequence": [
+                        {
+                            "name": "Tap",
+                            "arguments_map": {
+                                "x": "x",
+                                "y": "y"
+                            }
+                        },
+                        {
+                            "name": "Type",
+                            "arguments_map": {
+                                "text": "text"
+                            }
+                        },
+                        {
+                            "name": "Enter",
+                            "arguments_map": {}
+                        }
+                    ]
+                }
+            },
+            "width": 1080,
+            "height": 2340,
+            "perception_infos_pre": [],
+            "keyboard_pre": false,
+            "perception_infos_post": [],
+            "keyboard_post": false,
+            "summary_history": [],
+            "action_history": [],
+            "action_outcomes": [],
+            "error_descriptions": [],
+            "last_summary": "",
+            "last_action": "",
+            "last_action_thought": "",
+            "important_notes": "",
+            "error_flag_plan": false,
+            "error_description_plan": false,
+            "plan": "",
+            "progress_status": "",
+            "progress_status_history": [],
+            "finish_thought": "",
+            "current_subgoal": "",
+            "prev_subgoal": "",
+            "err_to_manager_thresh": 2,
+            "future_tasks": []
+        }
+    }
+]

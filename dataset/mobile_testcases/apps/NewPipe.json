@@ -1,0 +1,58 @@
+[
+    {
+        "id": "mobile-29",
+        "noise": "Call",
+        "app": "NewPipe",
+        "package_name": "org.schabi.newpipe",
+        "apk_path": "dataset/mobile_tests/NewPipe/app-callNoise-debug.apk",
+        "prompt": "Help me find one apple pie recipe. Give me the video name and basic information shown on the page."
+    },
+    {
+        "id": "mobile-30",
+        "noise": "FontScale",
+        "app": "NewPipe",
+        "package_name": "org.schabi.newpipe",
+        "apk_path": "dataset/mobile_tests/NewPipe/app-fontNoise-debug.apk",
+        "prompt": "Help me find one apple pie recipe. Give me the video name and basic information shown on the page."
+    },
+    {
+        "id": "mobile-31",
+        "noise": "HeadsUp",
+        "app": "NewPipe",
+        "package_name": "org.schabi.newpipe",
+        "apk_path": "dataset/mobile_tests/NewPipe/app-headsupNoise-debug.apk",
+        "prompt": "Help me find one apple pie recipe. Give me the video name and basic information shown on the page."
+    },
+    {
+        "id": "mobile-32",
+        "noise": "Keyboard",
+        "app": "NewPipe",
+        "package_name": "org.schabi.newpipe",
+        "apk_path": "dataset/mobile_tests/NewPipe/app-keyboardNoise-debug.apk",
+        "prompt": "Help me find one apple pie recipe. Give me the video name and basic information shown on the page."
+    },
+    {
+        "id": "mobile-33",
+        "noise": "OrientationFlip",
+        "app": "NewPipe",
+        "package_name": "org.schabi.newpipe",
+        "apk_path": "dataset/mobile_tests/NewPipe/app-orientationNoise-debug.apk",
+        "prompt": "Help me find one apple pie recipe. Give me the video name and basic information shown on the page."
+    },
+    {
+        "id": "mobile-34",
+        "noise": "Overlay",
+        "app": "NewPipe",
+        "package_name": "org.schabi.newpipe",
+        "apk_path": "dataset/mobile_tests/NewPipe/app-overlayNoise-debug.apk",
+        "prompt": "Help me find one apple pie recipe. Give me the video name and basic information shown on the page."
+    },
+    {
+        "id": "mobile-35",
+        "noise": "Promo",
+        "app": "NewPipe",
+        "package_name": "org.schabi.newpipe",
+        "apk_path": "dataset/mobile_tests/NewPipe/app-promoNoise-debug.apk",
+        "prompt": "Help me find one apple pie recipe. Give me the video name and basic information shown on the page."
+    } 
+]

@@ -1,0 +1,3 @@
+The golden state for this task is:
+
+Agent successfully outputs a valid and correct sunglass product name from the given website. 

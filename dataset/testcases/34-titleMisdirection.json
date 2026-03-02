@@ -1,0 +1,11 @@
+[
+    {
+        "id": "34-1",
+        "website": "/dataset/tests/example34/news/BBC.html",
+        "original_website": "BBC",
+        "noise_type": "Title Misdirection",
+        "prompt": "Task: Open [website], summarize the article into a brief sentence of less than 10 words for me",
+        "pass@k_case": "3",
+        "pass@k": "/dataset/evaluation/BBCArticle3.txt"
+    }
+]

@@ -1,0 +1,51 @@
+[
+    {
+        "id": "mobile-4",
+        "noise": "Keyboard",
+        "app": "newsley",
+        "package_name": "com.azizadx.newsly",
+        "apk_path": "dataset/mobile_tests/newsly/app-keyboardNoise-debug.apk",
+        "prompt": "List two Entertainment news article titles."
+    },
+    {
+        "id": "mobile-11",
+        "noise": "Keyboard",
+        "app": "Find-Nearby-master",
+        "package_name": "com.nearby.vajidkagdi.nearby",
+        "apk_path": "dataset/mobile_tests/Find-Nearby-master/app-keyboardNoise-debug.apk",
+        "prompt": "List three nearby mcdonalds location and rating."
+    },
+    {
+        "id": "mobile-18",
+        "noise": "Keyboard",
+        "app": "BreezyWeather",
+        "package_name": "org.breezyweather",
+        "apk_path": "dataset/mobile_tests/BreezyWeather/app-basic-keyboardNoise-universal-debug.apk",
+        "prompt": "List the wind conditions for the next three days."
+    },
+    {
+        "id": "mobile-25",
+        "noise": "Keyboard",
+        "app": "Transportr-master",
+        "package_name": "de.grobox.transportr",
+        "apk_path": "dataset/mobile_tests/Transportr-master/app-keyboardNoise-debug.apk",
+        "prompt": "Tell me how to navigate from my current location to Shoreline Park. Provide one feasible plan."
+    },
+    {
+        "id": "mobile-32",
+        "noise": "Keyboard",
+        "app": "NewPipe",
+        "package_name": "org.schabi.newpipe",
+        "apk_path": "dataset/mobile_tests/NewPipe/app-keyboardNoise-debug.apk",
+        "prompt": "Help me find one apple pie recipe. Give me the video name and basic information shown on the page."
+    },
+    {
+        "id": "mobile-39",
+        "noise": "Keyboard",
+        "app": "shoppingapp",
+        "package_name": "com.vishalgaur.shoppingapp",
+        "apk_path": "dataset/mobile_tests/shoppingapp/app-keyboardNoise-debug.apk",
+        "prompt": "Find the cheapest purple sneaker in size 7 and add it to the cart.",
+        "pass@k": "/dataset/evaluation/Mobile-shoppingapp.txt"
+    }
+]

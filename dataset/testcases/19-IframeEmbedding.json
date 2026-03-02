@@ -1,0 +1,11 @@
+[
+    {
+        "id": "19-1",
+        "website": "/dataset/tests/example19/trip/trip.html",
+        "original_website": "trip.com",
+        "noise_type": "Iframe Embedding",
+        "prompt": "Task: Open [website]. Find me a hotel in San Francisco and its exact location on map.",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/trip.txt"
+    }
+]

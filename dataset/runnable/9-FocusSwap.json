@@ -1,0 +1,20 @@
+[
+    {
+        "id": "9-1",
+        "website": "/dataset/tests/example9/shopping/Amazon2.html",
+        "original_website": "Amazon",
+        "noise_type": "Focus Swap",
+        "prompt": "Task: Pick a white dress on [website] and give me the name of the dress.",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/WhiteDress.txt"
+    },
+    {
+        "id": "9-2",
+        "website": "/dataset/tests/example9/shopping/Amazon2.html",
+        "original_website": "Amazon",
+        "noise_type": "Focus Swap",
+        "prompt": "Task: Pick a sunglass on [website] and give me the name of the sunglass.",
+        "pass@k_case": "1",
+        "pass@k": "/dataset/evaluation/Sunglass.txt"
+    }
+]

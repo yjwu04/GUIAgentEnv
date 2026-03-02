@@ -1,0 +1,60 @@
+The search bar: GUI Agent Mobile
+
+The search results: 
+
+Github.com
+github.com › PhoneLLM › Awesome-LLM-Powered-Phone-GUI
+GitHub - PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents...
+[2024/12/29] We create this repository to maintain a paper list on LLM-Powered Phone GUI Agents.
+
+Arxiv.org
+arxiv.org › pdf › 2503.15937
+Advancing Mobile GUI Agents: A Verifier-Driven Approach to...
+We propose V-Droid, a mobile GUI task automation agent. Unlike previous mobile agents that utilize Large Language Models (LLMs) as generators to directly generate actions at...
+
+Researchgate.net
+researchgate.net › publication › 390038413_Advancing
+(PDF) Advancing Mobile GUI Agents: A Verifier-Driven Approach to...
+Graphical User Interface (GUI). ... Mobile GUI agents, a subset of AI agents, are designed to autonomously perform tasks on mobile devices.
+
+Hf.Global-rail.com
+hf.global-rail.com › papers › 2504.13805
+Paper page - LearnAct: Few-Shot Mobile GUI Agent with a Unified...
+Mobile GUI agents show promise in automating tasks but face generalization challenges in diverse real-world scenarios. Traditional approaches using pre-training or...
+
+Aimodels.fyi
+aimodels.fyi › papers › arxiv › learnact-few-shot
+LearnAct: Few-Shot Mobile GUI Agent with a Unified Demonstration...
+Current Approaches to Mobile GUI Agent Benchmarking. Existing benchmarks for mobile GUI agents can be categorized into static datasets and dynamic benchmarking environments.
+
+Chatpaper.ai
+chatpaper.ai › ru › paper › 32b31a94-4190-4a9b-96b5
+A3: Арена агентов Android для мобильных GUI-агентов
+Mobile GUI agents, a subset of AI agents, are designed to autonomously perform tasks on mobile devices. While numerous studies have introduced agents, datasets, and benchmarks...
+
+Getaiverse.com
+getaiverse.com › post › mobile-gui-agenten-eine-neue
+A3: A New Benchmark for Evaluating Mobile GUI Agents
+Mobile GUI Agents: A New Era of Automation on Android Devices. Artificial intelligence (AI) has made enormous progress in recent years, particularly in the field of large language...
+
+Restack.io
+restack.io › agent-architecture-answer-mobile
+Mobile Agent Systems in AI | Restackio
+- Mobile GUI-Control Agents: Capabilities and Applications
+- Collaborative Multi-Agent Workflows in AI
+- Challenges and Future Directions for Mobile Agent Systems
+
+Youtube.com
+youtube.com › watch
+Android Agent Arena (A3) - Mobile GUI AI Agents
+This video explains Android Agent Arena (A3), an evaluation platform that integrates 201 tasks across 21 mainstream for mobile GUI AI agents...
+
+Rohan-paul.com
+rohan-paul.com › a3-android-agent-arena-for-mobile
+"A3: Android Agent Arena for Mobile GUI Agents"
+Existing mobile GUI agent evaluation platforms focus on static frame tests or limited app scenarios, failing to assess real-world performance effectively. Solution in this Paper:
+
+Telegram
+t.me › Neurs.AI…
+Neurs.AI. Бот нейропомощник
+AdБот для доступа к GPT-4o, Claude 3, Gemini, Midjourney, Dall-E 3 и другие. · 16+

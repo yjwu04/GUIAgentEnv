@@ -1,0 +1,3 @@
+The golden state for this task is:
+
+Agent successfully locates and opens the video titled "ANGRY GRANDMA FINDS BIGFOOT? (REAL EVIDENCE)". The agent should navigate to the video's page and play the video. 

@@ -1,0 +1,18 @@
+[
+    {
+        "id": "8-1",
+        "website": "/dataset/tests/example8/videoweb/videoweb.html",
+        "original_website": "Youtube",
+        "noise_type": "Language Swap",
+        "prompt": "Task: On [website], browse this page, only look at the video titles and find to see if there is a video about Chinese automobiles; if there is, give me one title of the video."
+    },
+    {
+        "id": "8-2",
+        "website": "/dataset/tests/example8/news/bbc-home.html",
+        "original_website": "BBC-Home",
+        "noise_type": "Language Swap",
+        "prompt": "Task: On [website], browse this page and find to see if there is an article talking about Sabrina Carpenter, if there is give me the title of that article.",
+        "pass@k_case": "2",
+        "pass@k": "/dataset/evaluation/BBCSabrina.txt"
+    }
+]

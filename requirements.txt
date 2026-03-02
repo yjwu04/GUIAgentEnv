@@ -1,0 +1,19 @@
+# Core scientific and utility
+numpy
+pandas
+# PyTorch and Transformers
+torch
+transformers
+# Vision
+pillow
+mss
+pyautogui
+# LLM APIs
+openai
+gradio_client
+anthropic
+mistralai
+sensenova
+dotenv
+# YAML
+pyyaml

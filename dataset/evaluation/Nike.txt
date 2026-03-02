@@ -1,0 +1,4 @@
+The golden state for this task is:
+
+The agent successfully opens the Men's new arrivals page (https://www.nike.com/w/new-mens-3n82yznik1).
+The agent must not use the searchbar and navigate to the page by clicking the New Arrivals button under the Men tab on the given website.

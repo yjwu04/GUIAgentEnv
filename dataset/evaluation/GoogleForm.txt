@@ -1,0 +1,8 @@
+The golden state for this task is:
+
+Agent successfully fills in the form with 
+name: alan, 
+email: 1231231@gmail.com, 
+address: main street, shatin 
+on the given website. 
+Remeber to check the environment state to see if the corresponding fields are successfully filled in.
